@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Technical Projects",
+    "section": "",
+    "text": "Below is a selection of data science projects demonstrating my end-to-end capabilities, from raw data engineering to statistical modeling and stakeholder presentation."
+  },
+  {
+    "objectID": "projects.html#solar",
+    "href": "projects.html#solar",
+    "title": "Technical Projects",
+    "section": "1. Geospatial Solar Optimization Engine",
+    "text": "1. Geospatial Solar Optimization Engine\nTools: Python, pvlib, Uber H3, Hexagonal Clustering, Pandas Status: Ongoing Research\n\nThe Challenge\nOptimizing solar panel placement in dense urban environments requires balancing irradiation data with spatial constraints. Standard grid models often fail to capture the nuances of irregular urban geometries.\n\n\nThe Solution\nI developed a Python-based optimization engine focusing on the Kyiv, Ukraine region. By integrating the pvlib library for irradiance modeling with Uber’s H3 library, I created a hexagonal grid system to identify high-efficiency clusters for photovoltaic installation.\n\n\nKey Technical Achievements\n\nHexagonal Spatial Indexing: Implemented Uber H3 to divide the target area into hexagonal cells, allowing for superior neighbor traversal and radius queries compared to traditional square grids.\nIrradiance Modeling: Utilized pvlib to simulate clear-sky and actual irradiance based on historical weather data.\nLocation Specificity: Configured precise geospatial parameters for the Kyiv-Pechersk Lavra region to test model sensitivity.\n\n\n\nCode Snapshot\nA snippet demonstrating the initialization of the location and model parameters:\nfrom pvlib.location import Location\nimport pvlib\nimport pandas as pd\n\n# Define specific model parameters for Kyiv region\n# Focusing on precise latitude/longitude for irradiation mapping\nlocation = Location(\n    latitude=50.4353, \n    longitude=30.5572, \n    tz='Europe/Kyiv', \n    altitude=60, \n    name=\"Kyiv-Pechersk Lavra\"\n)\n\n# Fetching clear sky data for model calibration\ncs = location.get_clearsky(pd.date_range(start='2024-06-01', periods=24, freq='1H'))\nprint(cs.head())\n\n\n\n:::{#quarto-navigation-envelope .hidden}\n[Bhabilsh Limbu]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl\"}\n[Bhabilsh Limbu]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXItdGl0bGU=\"}\n[Home]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6SG9tZQ==\"}\n[/index.html]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6L2luZGV4Lmh0bWw=\"}\n[Projects]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6UHJvamVjdHM=\"}\n[/projects.html]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6L3Byb2plY3RzLmh0bWw=\"}\n[CV / Resume]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6Q1YgLyBSZXN1bWU=\"}\n[/resume.qmd]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6L3Jlc3VtZS5xbWQ=\"}\n[https://github.com/bhabs2021]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6aHR0cHM6Ly9naXRodWIuY29tL2JoYWJzMjAyMQ==\"}\n[https://www.linkedin.com/in/your-profile]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWludC1uYXZiYXI6aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL3lvdXItcHJvZmlsZQ==\"}\n:::\n\n\n:::{#quarto-listing-pipeline .hidden}\n[$e = mC^2$]{.hidden .quarto-markdown-envelope-contents render-id=\"cXVhcnRvLWVuYWJsZS1tYXRoLWlubGluZQ==\"}\n\n:::{.hidden .quarto-markdown-envelope-contents render-id=\"cGlwZWxpbmUtbGlzdGluZy1saXN0aW5n\"}\n\n\n::: {.list .quarto-listing-default}\n\n:::\n\n\n```{=html}\n&lt;div class=\"listing-no-matching d-none\"&gt;No matching items&lt;/div&gt;\n:::\n:::"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bhabilsh Limbu",
+    "section": "",
+    "text": "I bridge the gap between complex statistical modeling and strategic business decisions. With a strong foundation in Computer Science (University of Greenwich) and specialized experience in Geospatial Optimization and Unsupervised Learning, I build tools that solve real-world problems.\n\n\n\n\n\n\nUsing Python, pvlib, and Uber H3 to model and optimize solar panel placement in complex urban environments.\n\n\n\nApplied PCA and K-Means to segment credit card users, identifying key behavioral clusters for targeted marketing.\n\n\n\nPower BI dashboards and data migration strategy that linked tutor engagement to student retention."
+  },
+  {
+    "objectID": "index.html#data-scientist-behavioral-analyst-optimization-researcher",
+    "href": "index.html#data-scientist-behavioral-analyst-optimization-researcher",
+    "title": "Bhabilsh Limbu",
+    "section": "",
+    "text": "I bridge the gap between complex statistical modeling and strategic business decisions. With a strong foundation in Computer Science (University of Greenwich) and specialized experience in Geospatial Optimization and Unsupervised Learning, I build tools that solve real-world problems.\n\n\n\n\n\n\nUsing Python, pvlib, and Uber H3 to model and optimize solar panel placement in complex urban environments.\n\n\n\nApplied PCA and K-Means to segment credit card users, identifying key behavioral clusters for targeted marketing.\n\n\n\nPower BI dashboards and data migration strategy that linked tutor engagement to student retention."
+  }
+]

@@ -1,0 +1,41 @@
+---
+title: "Bhabilsh Limbu"
+about:
+  template: jolla
+  image: profile.jpg
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/bhabilsh-l-1200771b1/
+    - icon: github
+      text: GitHub
+      href: https://github.com/bhabs2021
+    - icon: file-text
+      text: Resume
+      href: resume.qmd
+---
+
+## Data Scientist | Behavioral Analyst | Optimization Researcher
+
+I bridge the gap between complex statistical modeling and strategic business decisions. With a strong foundation in **Computer Science** (University of Greenwich) and specialized experience in **Geospatial Optimization** and **Unsupervised Learning**, I build tools that solve real-world problems.
+
+### Featured Projects
+
+::: {.grid}
+
+::: {.g-col-4}
+### [Solar Optimization](projects.qmd#solar)
+Using **Python, pvlib, and Uber H3** to model and optimize solar panel placement in complex urban environments.
+:::
+
+::: {.g-col-4}
+### [Credit Segmentation](projects.qmd#credit)
+Applied **PCA and K-Means** to segment credit card users, identifying key behavioral clusters for targeted marketing.
+:::
+
+::: {.g-col-4}
+### [Migration Analytics](projects.qmd#hackathon)
+**Power BI** dashboards and data migration strategy that linked tutor engagement to student retention.
+:::
+
+:::

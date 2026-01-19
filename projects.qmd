@@ -1,0 +1,48 @@
+---
+title: "Technical Projects"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+---
+
+Below is a selection of data science projects demonstrating my end-to-end capabilities, from raw data engineering to statistical modeling and stakeholder presentation.
+
+---
+
+## 1. Geospatial Solar Optimization Engine {#solar}
+**Tools:** Python, `pvlib`, Uber H3, Hexagonal Clustering, Pandas
+**Status:** Ongoing Research
+
+### The Challenge
+Optimizing solar panel placement in dense urban environments requires balancing irradiation data with spatial constraints. Standard grid models often fail to capture the nuances of irregular urban geometries.
+
+### The Solution
+I developed a Python-based optimization engine focusing on the **Kyiv, Ukraine** region. By integrating the `pvlib` library for irradiance modeling with **Uber’s H3** library, I created a hexagonal grid system to identify high-efficiency clusters for photovoltaic installation.
+
+### Key Technical Achievements
+* **Hexagonal Spatial Indexing:** Implemented Uber H3 to divide the target area into hexagonal cells, allowing for superior neighbor traversal and radius queries compared to traditional square grids.
+* **Irradiance Modeling:** Utilized `pvlib` to simulate clear-sky and actual irradiance based on historical weather data.
+* **Location Specificity:** Configured precise geospatial parameters for the Kyiv-Pechersk Lavra region to test model sensitivity.
+
+### Code Snapshot
+*A snippet demonstrating the initialization of the location and model parameters:*
+
+```python
+from pvlib.location import Location
+import pvlib
+import pandas as pd
+
+# Define specific model parameters for Kyiv region
+# Focusing on precise latitude/longitude for irradiation mapping
+location = Location(
+    latitude=50.4353, 
+    longitude=30.5572, 
+    tz='Europe/Kyiv', 
+    altitude=60, 
+    name="Kyiv-Pechersk Lavra"
+)
+
+# Fetching clear sky data for model calibration
+cs = location.get_clearsky(pd.date_range(start='2024-06-01', periods=24, freq='1H'))
+print(cs.head())

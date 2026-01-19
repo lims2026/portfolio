@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Bhabilsh Limbu"
+  navbar:
+    background: primary  # Options: primary, dark, light, secondary
+    search: false        # Set to true if you want a search bar
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+      - href: resume.qmd
+        text: CV / Resume
+    right:
+      - icon: github
+        href: https://github.com/bhabs2021
+      - icon: linkedin
+        href: https://www.linkedin.com/in/your-profile
