@@ -2,7 +2,7 @@
 title: "My Resume"
 ---
 
-## Resume
+## *Data Scientist*
 
 ```{=html}
 <object data="assets/Bhabilsh_Limbu_CV.pdf" type="application/pdf" width="100%" height="800px">

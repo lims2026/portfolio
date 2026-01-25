@@ -17,18 +17,18 @@ about:
 
 ## Data Scientist | Teacher
 
-**Final year** undergraduate, with a background in Computer Science and a core focus on **Statistical Inference** and **Trend Analysis**. Skilled at identifying hidden patterns within high-dimensional data and translating statistical significance into commercial opportunity. By leveraging **Unsupervised Learning** and **Predictive Modelling**, I transform raw data into actionable forecasts that mitigate risk and identify emerging market trends.
+Final year **Data Science undergraduate**, with a core focus on **Statistical Inference** and **Trend Analysis**. Skilled at identifying patterns within **high-dimensional data** and translating statistical significance into **commercial opportunity**.
 
 ### Featured Projects
 
-::: {.grid}
+::: {.grid .justify-content-center}
 
-::: {.g-col-4}
+::: {.g-col-12 .g-col-md-4 .g-start-md-3 .text-center}
 ### [Credit Card Customer Segmentation](projects.qmd#Credit_Card_Customer_Segmentation)
 Hybrid unsupervised learning pipeline combining **PCA** with **K-Means clustering** to segment high-dimensional credit card data into distinct profiles, enabling targeted marketing strategies and distinct risk identification.
 :::
 
-::: {.g-col-4}
+::: {.g-col-12 .g-col-md-4 .text-center}
 ### [Global Rehabilitation Analysis](projects.qmd#Global_Rehabilitation_Analysis)
 Interactive **Power BI solution** utilising **SQL** and **DAX** to transform complex global health metrics into accessible, policy-driven insights for identifying critical rehabilitation needs and guiding resource allocation.
 
