@@ -14,16 +14,17 @@ Final year **Data Science undergraduate**, with a core focus on **Statistical In
 ::: {.grid .justify-content-center}
 
 ::: {.g-col-12 .g-col-md-4 .g-start-md-3 .text-center}
-![](assets/Credit_Card.gif){.project-gif}
+![](assets/credit_card.gif){.project-gif}
 
 ### [Credit Card Customer Segmentation](projects.qmd#credit-card)
 Hybrid unsupervised learning pipeline combining **PCA** with **K-Means clustering** to segment high-dimensional credit card data into distinct profiles, enabling targeted marketing strategies and distinct risk identification.
 :::
 
 ::: {.g-col-12 .g-col-md-4 .text-center}
-![](assets/Global_Rehab.gif){.project-gif}
+![](assets/global_rehab.gif){.project-gif}
 
-### [Global Rehabilitation Analysis](projects.qmd#Global-Rehab)
+### [Global Rehabilitation Analysis](projects.qmd#global-rehab)
 Interactive **Power BI solution** utilising **SQL** and **DAX** to transform complex global health metrics into accessible, policy-driven insights for identifying critical rehabilitation needs and guiding resource allocation.
 
+:::
 :::

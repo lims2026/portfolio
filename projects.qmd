@@ -57,7 +57,7 @@ final_df = pd.DataFrame(final_data, columns=direct_features + [f'PC{i+1}' for i 
 
 ---
 
-## 2. Global Rehabilitation Analysis {#Global-Rehab}
+## 2. Global Rehabilitation Analysis {#global-rehab}
 **Tools:** Power BI, SQL, DAX
 **Status:** Ongoing Research
 
