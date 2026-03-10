@@ -7,7 +7,7 @@ about:
 
 ## Data Scientist | Teacher
 
-Final year **Data Science undergraduate**, with a core focus on **Statistical Inference** and **Trend Analysis**. Skilled at identifying patterns within **high-dimensional data** and translating statistical significance into **commercial opportunity**.
+Final year **Data Science undergraduate**, with a core focus on **geospatial analysis** and **statistical modelling**. Skilled at identifying patterns within **high-dimensional data** and translating statistical significance into **commercial opportunity**.
 
 ### Featured Projects
 
