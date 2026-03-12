@@ -2,7 +2,7 @@
 title: "Bhabilsh Limbu"
 about:
   template: jolla
-  image: profile1.jpg
+  image: assets/profile1.jpg
 ---
 
 ## Data Scientist | Teacher
