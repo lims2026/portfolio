@@ -33,7 +33,7 @@ Final year **Data Science undergraduate**, with a core focus on **geospatial ana
 ::: {.g-col-12 .g-col-md-4}
 <div class="project-card text-center">
 
-   **Global Rehabilitation Analysis**
+   **Global Health Rehabilitation Analysis**
 
   <a href="projects.qmd#global-rehab">
     <img src="assets/global_rehab.gif" class="project-gif">
