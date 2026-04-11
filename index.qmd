@@ -9,7 +9,9 @@ about:
 
 Final year **Data Science undergraduate**, with a core focus on **geospatial analysis** and **statistical modelling**. Skilled at identifying patterns within **high-dimensional data** and translating statistical significance into **commercial opportunity**.
 
+
 ### Featured Projects
+<div style="margin-bottom: 40px;"></div>
 
 ::: {.grid .justify-content-center .g-4}
 
