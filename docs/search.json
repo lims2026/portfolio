@@ -18,14 +18,14 @@
     "href": "index.html",
     "title": "Bhabilsh Limbu",
     "section": "",
-    "text": "Final year Data Science undergraduate, with a core focus on geospatial analysis and statistical modelling. Skilled at identifying patterns within high-dimensional data and translating statistical significance into commercial opportunity.\n\n\n\n\n\n\n\nHybrid unsupervised learning pipeline combining PCA with K-Means clustering to segment high-dimensional credit card data into distinct profiles, enabling targeted marketing strategies and distinct risk identification.\n\n\n\n\n\n\nInteractive Power BI solution utilising SQL and DAX to transform complex global health metrics into accessible, policy-driven insights for identifying critical rehabilitation needs and guiding resource allocation."
+    "text": "Final year Data Science undergraduate, with a core focus on geospatial analysis and statistical modelling. Skilled at identifying patterns within high-dimensional data and translating statistical significance into commercial opportunity.\n\n\n\n\n\nCredit Card Customer Segmentation\n \n\nPCA, Clustering\n\n\n\n\nGlobal Rehabilitation Analysis\n \n\nPower BI\n\n\n\n\nWeb Funnel & A/B Testing Analysis\n \n\nPandas, Plotly, SciPy"
   },
   {
     "objectID": "index.html#data-scientist-teacher",
     "href": "index.html#data-scientist-teacher",
     "title": "Bhabilsh Limbu",
     "section": "",
-    "text": "Final year Data Science undergraduate, with a core focus on geospatial analysis and statistical modelling. Skilled at identifying patterns within high-dimensional data and translating statistical significance into commercial opportunity.\n\n\n\n\n\n\n\nHybrid unsupervised learning pipeline combining PCA with K-Means clustering to segment high-dimensional credit card data into distinct profiles, enabling targeted marketing strategies and distinct risk identification.\n\n\n\n\n\n\nInteractive Power BI solution utilising SQL and DAX to transform complex global health metrics into accessible, policy-driven insights for identifying critical rehabilitation needs and guiding resource allocation."
+    "text": "Final year Data Science undergraduate, with a core focus on geospatial analysis and statistical modelling. Skilled at identifying patterns within high-dimensional data and translating statistical significance into commercial opportunity.\n\n\n\n\n\nCredit Card Customer Segmentation\n \n\nPCA, Clustering\n\n\n\n\nGlobal Rehabilitation Analysis\n \n\nPower BI\n\n\n\n\nWeb Funnel & A/B Testing Analysis\n \n\nPandas, Plotly, SciPy"
   },
   {
     "objectID": "projects.html",
@@ -47,5 +47,19 @@
     "title": "Technical Projects",
     "section": "2. Global Rehabilitation Analysis",
     "text": "2. Global Rehabilitation Analysis\nTools: Power BI, SQL, DAX Status: Ongoing Research\n\nThe Challenge\nGlobal health systems lack clear, accessible insight into rising rehabilitation needs. Disease burden varies widely across regions and conditions, yet policymakers struggle to interpret complex DALY data and identify where services are most needed. The challenge was to turn high‑dimensional global health metrics into clear, trends,and find gaps in the system—through interactive, Power BI dashboards.\n\n\nThe Solution\nFull unsupervised learning pipeline to discover meaningful customer segments. The approach included:\nExtracting and transforming data using SQL. Developing dynamic DAX measures for real-time analysis. Designing user-friendly dashboards for non-technical stakeholders.\nThis strategy ensured robust segmentation and deeper insight into customer behaviour.\n\n\nKey Technical Achievements\n\nTransformed complex health datasets into an intuitive relational data model.\nImplemented advanced DAX calculations to quantify disease burden across varying demographics.\nDesigned interactive visuals (maps, heatmaps) to highlight regional disparities.\nEnabled stakeholders to drill into specific conditions and geographies instantly.\n\n\n\nPower BI Snapshot\nExecutive summary with KPIs- Loading…\n\n\nUnable to display PDF file. Download instead."
+  },
+  {
+    "objectID": "projects.html#web-funnel",
+    "href": "projects.html#web-funnel",
+    "title": "Technical Projects",
+    "section": "3. Web Funnel & A/B Testing Analysis",
+    "text": "3. Web Funnel & A/B Testing Analysis\n\n\n\nFigure 1: Customer Segments Visualisation\n\n\nTools: Python, Pandas, Plotly, SciPy Status: Completed\n\nThe Challenge\nWeb products often collect large volumes of event‑level data, yet teams struggle to interpret how users move through the conversion journey. Identifying where users drop off, which traffic sources bring high‑intent visitors, and whether product variants improve conversion requires structured analysis. The challenge was to transform raw event logs into a clear funnel model and evaluate product performance using statistical methods."
+  },
+  {
+    "objectID": "projects.html#the-solution-2",
+    "href": "projects.html#the-solution-2",
+    "title": "Technical Projects",
+    "section": "The Solution",
+    "text": "The Solution\nA full analytical workflow to model user progression and assess variant effectiveness. The approach included:\nConstructing a multi‑step conversion funnel. Quantifying drop‑off rates and source‑level conversion performance.\nEvaluating product variants using Chi‑Square testing and Bayesian inference.\nThis provided a transparent view of user behaviour and a statistically grounded assessment of the A/B experiment.\n\nKey Technical Achievements\n\nBuilt a structured funnel model to measure user progression and identify major drop‑off points.\nCalculated conversion rates across acquisition sources to assess traffic quality.\nImplemented both frequentist and Bayesian A/B test frameworks for robust variant evaluation.\nDeveloped interactive visualisations (Sankey diagrams, bar charts) to communicate findings effectively.\n\n\n\n\nCode Snapshot\nCode shows how the Frequentist Evaluation was implemented\n\n#| code-summary: \"Chi‑Square A/B Test Code\"\nfrom scipy.stats import chi2_contingency\nimport pandas as pd\n\n# 1. Build exposure and conversion table for each variant\ntable = [\n    [ab_df.loc[\"A\", \"converted\"], ab_df.loc[\"A\", \"exposed\"] - ab_df.loc[\"A\", \"converted\"]],\n    [ab_df.loc[\"B\", \"converted\"], ab_df.loc[\"B\", \"exposed\"] - ab_df.loc[\"B\", \"converted\"]],\n]\n\n# 2. Run Chi‑Square test to evaluate statistical significance\nchi2, p, dof, expected = chi2_contingency(table)\n\n# 3. p-value interpretation:\n*p &lt; 0.05 → statistically significant difference*\n*p ≥ 0.05 → no evidence that variants differ*\n\np"
   }
 ]

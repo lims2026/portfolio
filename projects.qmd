@@ -87,3 +87,59 @@ This strategy ensured robust segmentation and deeper insight into customer behav
 </object>
 
 ---
+
+## 3. Web Funnel & A/B Testing Analysis {#web-funnel}
+![Figure 1: Customer Segments Visualisation](assets/web_flow.png){width=80% fig-align="center"}
+
+**Tools:** Python, Pandas, Plotly, SciPy
+**Status:** Completed
+
+### The Challenge
+Web products often collect large volumes of event‑level data, yet teams struggle to interpret how users move through the conversion journey. Identifying where users **drop off**, which traffic sources bring **high‑intent** visitors, and whether product variants improve conversion requires structured analysis. The challenge was to transform raw event logs into a clear funnel model and evaluate product performance using statistical methods.
+
+## The Solution
+A full analytical workflow to model user progression and assess variant effectiveness. The approach included:
+
+**Constructing a multi‑step conversion funnel.**
+**Quantifying drop‑off rates and source‑level conversion performance.**  
+**Evaluating product variants using Chi‑Square testing and Bayesian inference.**
+
+This provided a transparent view of user behaviour and a statistically grounded assessment of the A/B experiment.
+
+### Key Technical Achievements
+* **Built a structured funnel model to measure user progression and identify major drop‑off points.**
+
+* **Calculated conversion rates across acquisition sources to assess traffic quality.**
+
+* **Implemented both frequentist and Bayesian A/B test frameworks for robust variant evaluation.**
+
+* **Developed interactive visualisations (Sankey diagrams, bar charts) to communicate findings effectively.**
+
+---
+
+### Code Snapshot
+*Code shows how the Frequentist Evaluation was implemented*
+
+```python
+
+#| code-summary: "Chi‑Square A/B Test Code"
+from scipy.stats import chi2_contingency
+import pandas as pd
+
+# 1. Build exposure and conversion table for each variant
+table = [
+    [ab_df.loc["A", "converted"], ab_df.loc["A", "exposed"] - ab_df.loc["A", "converted"]],
+    [ab_df.loc["B", "converted"], ab_df.loc["B", "exposed"] - ab_df.loc["B", "converted"]],
+]
+
+# 2. Run Chi‑Square test to evaluate statistical significance
+chi2, p, dof, expected = chi2_contingency(table)
+
+# 3. p-value interpretation:
+*p < 0.05 → statistically significant difference*
+*p ≥ 0.05 → no evidence that variants differ*
+
+p
+```
+
+---

@@ -11,20 +11,52 @@ Final year **Data Science undergraduate**, with a core focus on **geospatial ana
 
 ### Featured Projects
 
-::: {.grid .justify-content-center}
+::: {.grid .justify-content-center .g-4}
 
-::: {.g-col-12 .g-col-md-4 .g-start-md-3 .text-center}
-![](assets/credit_card.gif){.project-gif}
+::: {.g-col-12 .g-col-md-4}
+<div class="project-card text-center">
 
-### [Credit Card Customer Segmentation](projects.qmd#credit-card)
-Hybrid unsupervised learning pipeline combining **PCA** with **K-Means clustering** to segment high-dimensional credit card data into distinct profiles, enabling targeted marketing strategies and distinct risk identification.
+   **Credit Card Customer Segmentation**
+
+  <a href="projects.qmd#credit-card">
+    <img src="assets/credit_card.gif" class="project-gif">
+
+  </a>
+
+  **PCA, Clustering**
+
+</div>
 :::
 
-::: {.g-col-12 .g-col-md-4 .text-center}
-![](assets/global_rehab.gif){.project-gif}
+::: {.g-col-12 .g-col-md-4}
+<div class="project-card text-center">
 
-### [Global Rehabilitation Analysis](projects.qmd#global-rehab)
-Interactive **Power BI solution** utilising **SQL** and **DAX** to transform complex global health metrics into accessible, policy-driven insights for identifying critical rehabilitation needs and guiding resource allocation.
+   **Global Rehabilitation Analysis**
+
+  <a href="projects.qmd#global-rehab">
+    <img src="assets/global_rehab.gif" class="project-gif">
+ 
+  </a>
+
+  **Power BI**
+
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-4}
+<div class="project-card text-center">
+
+   **Web Funnel & A/B Testing Analysis**
+
+  <a href="projects.qmd#web-funnel">
+    <img src="assets/web_analysis.gif" class="project-gif">
+
+  </a>
+
+  **Pandas, Plotly, SciPy**
+
+</div>
+:::
 
 :::
-:::
+

@@ -271,6 +271,61 @@ Unable to display PDF file. <a href="assets/Global_Rehabilitation_Analysis.pdf">
 </p>
 </object>
 <hr>
+</section>
+</section>
+<section id="web-funnel" class="level2">
+<h2 class="anchored" data-anchor-id="web-funnel">3. Web Funnel &amp; A/B Testing Analysis</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/web_flow.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption>Figure 1: Customer Segments Visualisation</figcaption>
+</figure>
+</div>
+<p><strong>Tools:</strong> Python, Pandas, Plotly, SciPy <strong>Status:</strong> Completed</p>
+<section id="the-challenge-2" class="level3">
+<h3 class="anchored" data-anchor-id="the-challenge-2">The Challenge</h3>
+<p>Web products often collect large volumes of event‑level data, yet teams struggle to interpret how users move through the conversion journey. Identifying where users <strong>drop off</strong>, which traffic sources bring <strong>high‑intent</strong> visitors, and whether product variants improve conversion requires structured analysis. The challenge was to transform raw event logs into a clear funnel model and evaluate product performance using statistical methods.</p>
+</section>
+</section>
+<section id="the-solution-2" class="level2">
+<h2 class="anchored" data-anchor-id="the-solution-2">The Solution</h2>
+<p>A full analytical workflow to model user progression and assess variant effectiveness. The approach included:</p>
+<p><strong>Constructing a multi‑step conversion funnel.</strong> <strong>Quantifying drop‑off rates and source‑level conversion performance.</strong><br>
+<strong>Evaluating product variants using Chi‑Square testing and Bayesian inference.</strong></p>
+<p>This provided a transparent view of user behaviour and a statistically grounded assessment of the A/B experiment.</p>
+<section id="key-technical-achievements-2" class="level3">
+<h3 class="anchored" data-anchor-id="key-technical-achievements-2">Key Technical Achievements</h3>
+<ul>
+<li><p><strong>Built a structured funnel model to measure user progression and identify major drop‑off points.</strong></p></li>
+<li><p><strong>Calculated conversion rates across acquisition sources to assess traffic quality.</strong></p></li>
+<li><p><strong>Implemented both frequentist and Bayesian A/B test frameworks for robust variant evaluation.</strong></p></li>
+<li><p><strong>Developed interactive visualisations (Sankey diagrams, bar charts) to communicate findings effectively.</strong></p></li>
+</ul>
+<hr>
+</section>
+<section id="code-snapshot-1" class="level3">
+<h3 class="anchored" data-anchor-id="code-snapshot-1">Code Snapshot</h3>
+<p><em>Code shows how the Frequentist Evaluation was implemented</em></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">#| code-summary: "Chi‑Square A/B Test Code"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> chi2_contingency</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Build exposure and conversion table for each variant</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>table <span class="op">=</span> [</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    [ab_df.loc[<span class="st">"A"</span>, <span class="st">"converted"</span>], ab_df.loc[<span class="st">"A"</span>, <span class="st">"exposed"</span>] <span class="op">-</span> ab_df.loc[<span class="st">"A"</span>, <span class="st">"converted"</span>]],</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    [ab_df.loc[<span class="st">"B"</span>, <span class="st">"converted"</span>], ab_df.loc[<span class="st">"B"</span>, <span class="st">"exposed"</span>] <span class="op">-</span> ab_df.loc[<span class="st">"B"</span>, <span class="st">"converted"</span>]],</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Run Chi‑Square test to evaluate statistical significance</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>chi2, p, dof, expected <span class="op">=</span> chi2_contingency(table)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. p-value interpretation:</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="op">*</span>p <span class="op">&lt;</span> <span class="fl">0.05</span> → statistically significant difference<span class="op">*</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="op">*</span>p ≥ <span class="fl">0.05</span> → no evidence that variants differ<span class="op">*</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>p</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
 
 
 </section>
